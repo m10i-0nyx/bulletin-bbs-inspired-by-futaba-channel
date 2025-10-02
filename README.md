@@ -15,3 +15,5 @@ cp streamlit.service ~/.config/systemd/user/
 systemctl --user daemon-reload
 systemctl --user enable --now streamlit.service
 ```
+
+NGINX & MariaDB 設定など追記予定
