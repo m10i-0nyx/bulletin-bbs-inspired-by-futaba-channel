@@ -1,0 +1,6 @@
+streamlit
+PyMySQL
+sqlalchemy
+python-dotenv
+captcha
+streamlit-paste-button

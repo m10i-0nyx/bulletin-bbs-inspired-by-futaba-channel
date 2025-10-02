@@ -1,0 +1,11 @@
+[server]
+address="127.0.0.1"
+port=8081
+maxUploadSize=50
+
+[theme]
+base="light"
+primaryColor="#004a55"
+backgroundColor="#fcbccc"
+textColor="#222"
+font="sans serif"
