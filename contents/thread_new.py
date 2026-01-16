@@ -49,7 +49,7 @@ def main():
     with st.form("post_form", clear_on_submit=True):
         name = st.text_input("名前", max_chars=32, value=preset_post_name)
         message = st.text_area("メッセージ", max_chars=2048)
-        uploaded_files = st.file_uploader("ファイルをアップロード（任意）", accept_multiple_files=True, type=["gif", "jpg", "png", "mp4", "avi", "webp"])
+        uploaded_files = st.file_uploader("ファイルをアップロード（任意）", accept_multiple_files=True, type=["gif", "jpg", "png", "mp4", "avi", "webp", "webm"])
         submitted = st.form_submit_button(label="スレッド投稿", type="primary")
 
         if submitted and (message != "" or uploaded_files):

@@ -67,7 +67,7 @@ else:
                                 ''',
                                 unsafe_allow_html=True
                             )
-                        elif file_name.lower().endswith((".mp4", ".avi")):
+                        elif file_name.lower().endswith((".mp4", ".avi", ".webm")):
                             st.markdown(
                                 f'''
                                 <video src="/uploaded/{file_name}" width="200" controls>
@@ -88,7 +88,7 @@ else:
         with st.form("post_form", clear_on_submit=True):
             name = st.text_input("名前", max_chars=32, value=preset_post_name)
             message = st.text_area("メッセージ", max_chars=2048)
-            uploaded_files = st.file_uploader("ファイルをアップロード（任意）", accept_multiple_files=True, type=["gif", "jpg", "png", "mp4", "avi", "webp"])
+            uploaded_files = st.file_uploader("ファイルをアップロード（任意）", accept_multiple_files=True, type=["gif", "jpg", "png", "mp4", "avi", "webp", "webm"])
             submitted = st.form_submit_button("投稿")
 
             if submitted and (message != "" or uploaded_files):
